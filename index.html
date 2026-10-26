@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de desarrollo web: proyectos, habilidades y formas de contacto."
+    />
+    <title>Portafolio | Desarrollo web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="portfolio-home">
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Navegación principal">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="navigation-links"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="navigation-links" id="navigation-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#dominios">Dominios</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DISPONIBLE PARA PROYECTOS</p>
+          <h1>Frontend y backend<br /><span>Developer</span></h1>
+          <p class="hero-role">CREANDO PARA LA WEB<span>_</span></p>
+          <p class="hero-description">
+            Transformo ideas en experiencias digitales claras, modernas y fáciles de usar.
+            Diseño y construyo cada detalle con intención.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">↗ &nbsp; Ver mis proyectos</a>
+          </div>
+          <div class="hero-meta">
+            <span>HTML · CSS · JAVASCRIPT</span>
+            <span class="meta-divider"></span>
+            <span>REACT · VUE</span>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="portrait-hanger" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <div class="portrait">
+              <img
+                class="portrait-image"
+                src="assets/profile-character.png"
+                alt="Ilustración de un personaje con audífonos, estrellas y notas musicales"
+              />
+            </div>
+            <div class="portrait-caption"><span>Emily</span><span>DESARROLLADORA</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="sobre-mi">
+        <div class="section-index">01 <span>/ SOBRE MÍ</span></div>
+        <div class="about-content">
+          <div>
+            <p class="eyebrow">UN POCO DE CONTEXTO</p>
+            <h2>Convirtiendo ideas<br />en <span>experiencias.</span></h2>
+          </div>
+          <div class="about-detail">
+            <p>
+              Soy desarrolladora web y disfruto crear sitios y aplicaciones intuitivos,
+              atractivos y funcionales. Cada proyecto es una oportunidad para aprender,
+              experimentar y cuidar cada detalle.
+            </p>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><strong>03</strong><span>tecnologías<br />que domino</span></article>
+          <article class="stat-card"><strong>∞</strong><span>ideas por<br />explorar</span></article>
+          <article class="stat-note"><span class="note-mark">✳</span><p>Siempre aprendiendo.<br />Siempre construyendo.</p></article>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="proyectos">
+        <div class="section-heading">
+          <div class="section-index">02 <span>/ TRABAJO SELECCIONADO</span></div>
+          <h2>Mis <span>proyectos.</span></h2>
+          <p class="section-intro">Una selección de ideas convertidas en experiencias digitales.</p>
+          <nav class="showcase-switcher" aria-label="Secciones del portafolio">
+            <a class="is-active" href="#proyectos" aria-current="page">Proyectos</a>
+            <a href="#dominios">Dominios</a>
+          </nav>
+        </div>
+        <div class="project-grid">
+          <a class="project-card project-featured" href="proyecto-danhee.html" aria-label="Ver detalles del proyecto Danhee">
+            <div class="project-visual visual-danhee">
+              <img
+                class="danhee-project-image"
+                src="assets/danhee-home.png"
+                alt="Página de inicio de Danhee con un asistente virtual para personalizar pasteles"
+              />
+            </div>
+            <div class="project-info">
+              <div><h3>Danhee</h3><p>Plataforma para personalizar pedidos de repostería.</p></div>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-tags"><span>Node.js</span><span>Express</span><span>MySQL</span><span>IA</span></div>
+          </a>
+
+          <a class="project-card" href="proyecto-soferp.html" aria-label="Ver detalles del sistema SOFERP">
+            <div class="project-visual visual-dashboard">
+              <div class="visual-topline"><span>SOFERP / 02</span><span>MANTENIMIENTO VEHICULAR</span></div>
+              <div class="soferp-dashboard">
+                <div class="soferp-toolbar"><strong>Soferp</strong><span>Control de Mantenimiento</span><span class="soferp-button">+ NUEVO CONTROL</span></div>
+                <div class="soferp-filters"><span>Tipo de activo: <b>Vehículos⌄</b></span><span>⌕ &nbsp; Buscar vehículo...</span><span>☷ &nbsp; FILTROS AVANZADOS</span></div>
+                <div class="soferp-table" aria-label="Ejemplo de estados de mantenimiento de vehículos">
+                  <div class="soferp-table-head"><span>VEHÍCULO</span><span>KM GPS</span><span>FECHA GPS</span><span>ESTADO</span></div>
+                  <div class="soferp-table-row"><span>DTM121 / 3.5 SECO</span><span>25,999 km</span><span>01/08/2025</span><span class="service-status status-soon">Próximo</span></div>
+                  <div class="soferp-table-row"><span>DTM117</span><span>150,000 km</span><span>N/A</span><span class="service-status status-soon">Próximo</span></div>
+                  <div class="soferp-table-row"><span>Vehículo no encontrado</span><span>0 km</span><span>N/A</span><span class="service-status status-ok">Al día</span></div>
+                  <div class="soferp-table-row"><span>Camioneta Peugeot Partner</span><span>19,875 km</span><span>31/07/2025</span><span class="service-status status-late">Atrasado</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div><h3>SOFERP · Control de mantenimiento</h3><p>Alertas de servicio vehicular por kilometraje y fecha.</p></div>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="project-tags"><span>Vue.js</span><span>Vuetify 2</span><span>Laravel API REST</span></div>
+          </a>
+        </div>
+        <p class="sample-note">Danhee: más detalles del proyecto próximamente.</p>
+      </section>
+
+      <section class="domains section-shell" id="dominios">
+        <div class="section-heading domains-heading">
+          <div class="section-index">03 <span>/ HERRAMIENTAS</span></div>
+          <p class="eyebrow">TECNOLOGÍA QUE UTILIZO</p>
+          <h2>Mis <span>dominios.</span></h2>
+          <p class="section-intro">Tecnologías y herramientas con las que doy vida a cada proyecto.</p>
+        </div>
+        <div class="domain-grid">
+          <article class="domain-card">
+            <span class="technology-logo logo-html" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 4h32l-3 36-13 4-13-4L8 4Z" fill="currentColor"/><path d="M16 13h17l-.5 5H21l.4 4h11l-1.2 13-7.2 2-7.1-2-.5-6h5l.2 2.3 2.5.7 2.4-.7.4-5H16.8L16 13Z" fill="#0b1324"/></svg></span>
+            <div><h3>HTML</h3><p>Estructura semántica</p></div><span class="domain-number">01</span>
+          </article>
+          <article class="domain-card">
+            <span class="technology-logo logo-js" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="5" y="5" width="38" height="38" rx="3" fill="currentColor"/><path d="M25 33c.8 1.3 1.7 2.2 3.5 2.2 1.5 0 2.4-.7 2.4-1.7 0-1.2-.9-1.6-2.6-2.4l-.9-.4c-2.6-1.1-4.4-2.5-4.4-5.4 0-2.7 2-4.8 5.2-4.8 2.2 0 3.8.8 5 2.9l-2.7 1.8c-.6-1.1-1.2-1.5-2.2-1.5-.9 0-1.5.6-1.5 1.4 0 1 .6 1.4 2.1 2.1l.9.4c3.1 1.3 4.8 2.7 4.8 5.7 0 3.3-2.6 5.1-6.1 5.1-3.4 0-5.6-1.6-6.7-3.8L25 33Zm-13 .4c.6 1 1.1 1.8 2.4 1.8 1.2 0 1.9-.5 1.9-2.3V21h4v13c0 4.1-2.4 6-5.8 6-3.1 0-4.8-1.6-5.7-3.5l3.2-2.1Z" fill="#0b1324"/></svg></span>
+            <div><h3>JavaScript</h3><p>Interactividad y lógica</p></div><span class="domain-number">02</span>
+          </article>
+          <article class="domain-card">
+            <span class="technology-logo logo-css" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 4h32l-3 36-13 4-13-4L8 4Z" fill="currentColor"/><path d="M16 13h17l-.5 5H21l.3 4h11l-1.2 13-7.1 2-7.1-2-.5-6h5l.2 2.3 2.4.7 2.4-.7.4-5H16.7L16 13Z" fill="#0b1324"/></svg></span>
+            <div><h3>CSS</h3><p>Estilo y animación</p></div><span class="domain-number">03</span>
+          </article>
+          <article class="domain-card">
+            <span class="technology-logo logo-mysql" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 32c6-12 12-18 19-18 4 0 6 2 8 6-5-2-8-2-12 1-4 3-7 8-10 14h-5v-3Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M27 16c5 0 8 3 11 8m-7-6c-1 8 1 12 6 15m-17-4c5-2 10-2 15 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="36" cy="13" r="2" fill="currentColor"/></svg></span>
+            <div><h3>MySQL</h3><p>Bases de datos</p></div><span class="domain-number">04</span>
+          </article>
+          <article class="domain-card">
+            <span class="technology-logo logo-react" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="3.5" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="24" cy="24" rx="19" ry="7.5"/><ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="7.5" transform="rotate(120 24 24)"/></g></svg></span>
+            <div><h3>React.js</h3><p>Interfaces dinámicas</p></div><span class="domain-number">05</span>
+          </article>
+          <article class="domain-card">
+            <span class="technology-logo logo-vue" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 9h9l10 17L34 9h9L24 43 5 9Z" fill="currentColor"/><path d="M14 9h8l2 4 2-4h8L24 25 14 9Z" fill="#0b1324"/></svg></span>
+            <div><h3>Vue</h3><p>Interfaces progresivas</p></div><span class="domain-number">06</span>
+          </article>
+          <article class="domain-card">
+            <span class="technology-logo logo-vuetify" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 43 40H5L24 5Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="m24 14 10 19H14l10-19Z" fill="currentColor"/><path d="M24 23v10" stroke="#0b1324" stroke-width="2"/></svg></span>
+            <div><h3>Vuetify 2</h3><p>Componentes para Vue</p></div><span class="domain-number">07</span>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand" href="#inicio">PORTA<span>FOLIO</span></a>
+      <a href="#inicio">Volver arriba ↑</a>
+    </footer>
+  </body>
+</html>

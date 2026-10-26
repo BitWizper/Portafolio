@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Detalles del proyecto Danhee, una plataforma para personalizar pedidos de repostería." />
+    <title>Danhee | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Navegación principal">
+        <div class="navigation-links">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#proyectos">Proyectos</a>
+          <a href="index.html#dominios">Dominios</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="project-detail section-shell">
+      <a class="detail-breadcrumb" href="index.html#proyectos">← Volver a mis proyectos</a>
+      <header class="detail-heading">
+        <p class="eyebrow">PROYECTO ESCOLAR / 01 · 2024–2026</p>
+        <h1>Proyecto <span>Danhee.</span></h1>
+        <p>
+          Plataforma web que conecta a clientes con reposteros para personalizar
+          productos y servicios. Esta ficha reúne la información disponible hasta el
+          momento; los detalles del proyecto se ampliarán más adelante.
+        </p>
+      </header>
+
+      <div class="detail-preview detail-preview-danhee">
+        <button
+          class="detail-image-trigger"
+          type="button"
+          aria-haspopup="dialog"
+          aria-label="Ampliar imagen de la página de inicio de Danhee"
+        >
+          <img
+            class="detail-project-image"
+            src="assets/danhee-home.png"
+            alt="Página de inicio de Danhee con un asistente virtual para personalizar pasteles"
+          />
+          <span class="detail-image-hint" aria-hidden="true">↗ Ampliar imagen</span>
+        </button>
+      </div>
+      <dialog class="image-lightbox" aria-label="Vista ampliada de Danhee">
+        <button class="image-lightbox-close" type="button" aria-label="Cerrar imagen ampliada">Cerrar ×</button>
+        <img
+          src="assets/danhee-home.png"
+          alt="Página de inicio de Danhee con un asistente virtual para personalizar pasteles"
+        />
+      </dialog>
+
+      <section class="detail-overview">
+        <h2>Una conexión hecha a tu gusto.</h2>
+        <p>
+          Danhee acerca a quienes buscan un postre personalizado con reposteros que
+          pueden prepararlo. Incluye consultas sobre pasteles, precios y disponibilidad
+          para orientar a los clientes durante la elección.
+        </p>
+      </section>
+
+      <section class="detail-facts" aria-label="Características del proyecto">
+        <article class="detail-fact">
+          <h3>Personalización de productos</h3>
+          <p>Conecta a los clientes con reposteros para personalizar productos y servicios.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Asistente con IA</h3>
+          <p>Ayuda a resolver consultas de pasteles, precios y disponibilidad.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Productos en 3D</h3>
+          <p>Modelos tridimensionales permiten visualizar los productos desde el frontend.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Gestión de imágenes</h3>
+          <p>Cloudinary se integra para la gestión de los archivos e imágenes del proyecto.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Backend y datos</h3>
+          <p>El backend está desarrollado con Node.js y Express; Sequelize trabaja con MySQL.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Despliegue</h3>
+          <p>El proyecto incluye el despliegue del frontend mediante GitHub Pages.</p>
+        </article>
+      </section>
+
+      <div class="detail-tags" aria-label="Tecnologías utilizadas">
+        <span>Node.js</span><span>Express</span><span>Sequelize</span><span>MySQL</span><span>Cloudinary</span><span>IA</span>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand" href="index.html">tu-nombre<span>.dev</span></a>
+      <p>Diseñado y construido con intención <span aria-hidden="true">✳</span></p>
+      <a href="index.html#proyectos">Todos los proyectos ↑</a>
+    </footer>
+  </body>
+</html>

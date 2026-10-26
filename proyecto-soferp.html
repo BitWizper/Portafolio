@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SOFERP: sistema de mantenimiento vehicular basado en kilometraje, fechas y alertas visuales." />
+    <title>SOFERP | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Navegación principal">
+        <div class="navigation-links">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="index.html#proyectos">Proyectos</a>
+          <a href="index.html#dominios">Dominios</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="project-detail section-shell">
+      <a class="detail-breadcrumb" href="index.html#proyectos">← Volver a mis proyectos</a>
+      <header class="detail-heading">
+        <p class="eyebrow">SOFERP / 02 · GESTIÓN DE MANTENIMIENTO VEHICULAR</p>
+        <h1>Control vehicular<br /><span>basado en kilometraje.</span></h1>
+        <p>
+          Módulo de control de mantenimiento integrado al ERP de SOFERP. Centraliza los
+          registros de vehículos y ayuda a detectar servicios próximos o atrasados
+          utilizando kilometraje y fechas.
+        </p>
+      </header>
+
+      <div class="detail-preview">
+        <div class="project-visual visual-dashboard">
+          <div class="visual-topline"><span>SOFERP / CONTROL DE MANTENIMIENTO</span><span>VISTA DEL PROYECTO</span></div>
+          <div class="soferp-dashboard soferp-dashboard-detail">
+            <div class="soferp-toolbar"><strong>Soferp</strong><span>Control de Mantenimiento</span><span class="soferp-button">+ NUEVO CONTROL</span></div>
+            <div class="soferp-filters"><span>Tipo de activo: <b>Vehículos⌄</b></span><span>⌕ &nbsp; Buscar vehículo...</span><span>☷ &nbsp; FILTROS AVANZADOS</span></div>
+            <div class="soferp-table" aria-label="Ejemplo de estados de mantenimiento de vehículos">
+              <div class="soferp-table-head"><span>VEHÍCULO</span><span>KM GPS</span><span>FECHA GPS</span><span>ESTADO</span></div>
+              <div class="soferp-table-row"><span>DTM121 / 3.5 SECO</span><span>25,999 km</span><span>01/08/2025</span><span class="service-status status-soon">Próximo</span></div>
+              <div class="soferp-table-row"><span>DTM117</span><span>150,000 km</span><span>N/A</span><span class="service-status status-soon">Próximo</span></div>
+              <div class="soferp-table-row"><span>Vehículo no encontrado</span><span>0 km</span><span>N/A</span><span class="service-status status-ok">Al día</span></div>
+              <div class="soferp-table-row"><span>Camioneta Peugeot Partner</span><span>19,875 km</span><span>31/07/2025</span><span class="service-status status-late">Atrasado</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="detail-overview">
+        <h2>Seguimiento preventivo en un solo lugar.</h2>
+        <p>
+          El proyecto de titulación, “Desarrollo de un Sistema de Gestión de
+          Mantenimiento Vehicular Basado en Kilometraje”, incorpora a SOFERP un módulo
+          dedicado a mantener el control de los vehículos y anticipar sus necesidades
+          de servicio.
+        </p>
+      </section>
+
+      <section class="detail-facts" aria-label="Características del proyecto">
+        <article class="detail-fact">
+          <h3>Alertas visuales</h3>
+          <p>Estados tipo semáforo: verde “Al día”, amarillo “Próximo” y rojo “Atrasado”.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Control por kilometraje y fecha</h3>
+          <p>Los avisos toman en cuenta el kilometraje recorrido y las fechas para alertar oportunamente.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Filtros avanzados</h3>
+          <p>Permite acotar la consulta por rango de fechas, estado y datos específicos de los vehículos.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Integrado al ERP</h3>
+          <p>El frontend se conecta con el backend de SOFERP mediante una API REST.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Trabajo de frontend</h3>
+          <p>Construí la interfaz del módulo utilizando Vue.js y Vuetify 2.</p>
+        </article>
+        <article class="detail-fact">
+          <h3>Desarrollo de software</h3>
+          <p>Proyecto de estadía profesional realizado entre mayo y agosto de 2025.</p>
+        </article>
+      </section>
+
+      <div class="detail-tags" aria-label="Tecnologías utilizadas">
+        <span>Vue.js</span><span>Vuetify 2</span><span>API REST</span><span>Laravel · PHP</span><span>SOFERP ERP</span>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand" href="index.html">tu-nombre<span>.dev</span></a>
+      <p>Diseñado y construido con intención <span aria-hidden="true">✳</span></p>
+      <a href="index.html#proyectos">Todos los proyectos ↑</a>
+    </footer>
+  </body>
+</html>
