@@ -35,6 +35,62 @@ body {
   line-height: 1.65;
 }
 
+.portfolio-home {
+  background-color: transparent;
+  background-image: none;
+}
+
+.portfolio-home::before {
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(5, 12, 28, 0.48), rgba(5, 12, 28, 0.68)),
+    radial-gradient(ellipse at 50% 35%, transparent 0%, rgba(5, 12, 28, 0.35) 100%);
+}
+
+.page-background-video {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.cursor-glow {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 360px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(129, 166, 255, 0.22) 0%,
+    rgba(89, 132, 242, 0.12) 28%,
+    rgba(67, 107, 211, 0.045) 48%,
+    transparent 70%
+  );
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(var(--cursor-x, -500px), var(--cursor-y, -500px), 0)
+    translate(-50%, -50%);
+  transition: opacity 180ms ease;
+  mix-blend-mode: screen;
+}
+
+.cursor-glow.is-visible {
+  opacity: 1;
+}
+
+.portfolio-home > header,
+.portfolio-home > main,
+.portfolio-home > footer {
+  position: relative;
+  z-index: 2;
+}
+
 body::before {
   position: fixed;
   z-index: -1;
@@ -1565,5 +1621,16 @@ body.has-reveal .reveal-on-scroll.is-visible {
   .portfolio-home .hero-copy > *,
   .portfolio-home .hero-art::before {
     animation: none;
+  }
+
+  .page-background-video,
+  .cursor-glow {
+    display: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-glow {
+    display: none;
   }
 }

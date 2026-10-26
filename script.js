@@ -90,6 +90,38 @@ if ("IntersectionObserver" in window && sections.length) {
 }
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const backgroundVideo = document.querySelector(".portfolio-home .page-background-video");
+const cursorGlow = document.querySelector(".portfolio-home .cursor-glow");
+
+if (prefersReducedMotion && backgroundVideo instanceof HTMLVideoElement) {
+  backgroundVideo.pause();
+}
+
+if (
+  cursorGlow instanceof HTMLElement &&
+  window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+  !prefersReducedMotion
+) {
+  let cursorFrame = 0;
+  let cursorPosition = { x: 0, y: 0 };
+
+  document.addEventListener("pointermove", (event) => {
+    cursorPosition = { x: event.clientX, y: event.clientY };
+    cursorGlow.classList.add("is-visible");
+    if (cursorFrame) return;
+
+    cursorFrame = window.requestAnimationFrame(() => {
+      cursorFrame = 0;
+      cursorGlow.style.setProperty("--cursor-x", `${cursorPosition.x}px`);
+      cursorGlow.style.setProperty("--cursor-y", `${cursorPosition.y}px`);
+    });
+  });
+
+  document.addEventListener("pointerleave", () => {
+    cursorGlow.classList.remove("is-visible");
+  });
+}
+
 const hero = document.querySelector(".portfolio-home .hero");
 const heroArt = document.querySelector(".portfolio-home .hero-art");
 
